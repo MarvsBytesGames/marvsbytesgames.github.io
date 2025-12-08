@@ -1,0 +1,81 @@
+/* --- Global & Layout Styles --- */
+body {
+    /* Main Background: Dark Charcoal (#333333) */
+    background: #333333; 
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* --- Profile Styling --- */
+.profile-image {
+    width: 128px;
+    height: 128px;
+    /* Removed border-radius for custom transparent PNGs */
+    object-fit: contain; 
+    margin-bottom: 20px;
+    border: none; 
+}
+
+h1 {
+    font-size: 1.5em;
+    /* High contrast text color */
+    color: #eeeeee; 
+    margin-bottom: 5px;
+}
+
+p {
+    /* Auxiliary Color 1 for bio/tagline (#adadad) */
+    color: #adadad; 
+    margin-bottom: 30px;
+}
+
+/* --- Button Styling (Applies to all .link-button) --- */
+.link-button {
+    display: block;
+    text-decoration: none;
+    /* Button Text: High contrast */
+    color: #eeeeee; 
+    /* Auxiliary Color 2: Main Button Color (#36b82a - Vibrant Green) */
+    background-color: #36b82a; 
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.link-button:hover {
+    /* Slightly darker shade of Aux 2 on hover (darker green) */
+    background-color: #2b9122; 
+    transform: translateY(-2px); /* Makes it pop */
+}
+
+/* --- Icon/Image Styling (Applies inside the buttons) --- */
+
+/* Font Awesome Icon Spacing */
+.link-button i {
+    margin-right: 10px;
+}
+
+/* Styling for Custom PNG Icons within a Button (like Starfield Creations) */
+.link-button .custom-icon {
+    width: 32px; 
+    height: 32px;
+    vertical-align: middle; 
+    margin-right: 10px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    object-fit: contain; 
+}
